@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="Css/MisEstilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div id="FaseAsesoria">
+            <form autocomplete="on">
+                <fieldset>
+                    <legend>Datos del estudiante</legend>
+                    <table>
+                        <tr>
+                            <td class="etiqueta">Identificacion 2.0 </td>
+                            <td><input type="text" name="id" placeholder="Identificacion" autofocus required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Nombre(s)</td>
+                            <td><input type="text" name="nombres" placeholder="Nombre(s)" required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Apellidos</td>
+                            <td><input type="text" name="apellidos" placeholder="Apellidos" required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">E - Mail</td>
+                            <td><input type="email" name="E-Mail" placeholder="E - Mail" autocomplete="off" required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Sexo</td>
+                            <td><input type="radio" name="genero" value="masculino" checked> Masculino</td>
+                        </tr>
+                        <tr>
+                            <td class="etiqueta"></td>
+                            <td><input type="radio" name="genero" value="femenino"> Femenino</td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta"></td>
+                            <td><input type="radio" name="genero" value="otro"> Otro</td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Asesoria</legend>
+                    <table>
+                        <tr>
+                            <td class="etiqueta">Tema </td>
+                            <td>
+                                <input list="temas" name="tema" placeholder="Escoja el tema" required>
+                                <datalist id="temas">
+                                    <option value="tema 1">
+                                    <option value="tema 2">
+                                    <option value="tema 3">
+                                    <option value="tema 4">
+                                    <option value="tema 5">
+                                </datalist>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Fecha</td>
+                            <td><input type="date" name="fecha" required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Hora</td>
+                            <td><input type="time" name="hora" required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Observacion</td>
+                            <td><textarea name="message" rows="1" cols="22" placeholder="Observacion" required></textarea></td>
+                        </tr>
+
+
+                    </table>
+                </fieldset>
+
+                <fieldset id="fieldset1">
+
+                    <table id="campoBotones">
+                        <tr>
+                            <td><input type="submit" value="Enviar"></td>
+                            <td><input id="Inp" type="reset" value="Nuevo registro"></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </body>
+</html>
